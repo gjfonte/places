@@ -99,11 +99,9 @@
         <!-- DEBUG -->
         <!-- 9E:58:CE:6F:D3:19:C1:B6:C4:AE:76:32:B5:1E:02:37:4B:F9:BC:99 -->
         <!-- AIzaSyCeR7uxZL6ZrC0yHO67TQJQB3tfCNnkQMU -->
-
         <!-- RELEASE -->
         <!-- 3F:B2:E0:27:0B:5C:2E:12:FA:D6:81:C6:D0:7B:14:5D:D7:E5:53:01 -->
         <!-- AIzaSyBYlJQQed24GRdyk_aZQPwdIauEZwYEXTk -->
-        
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyCeR7uxZL6ZrC0yHO67TQJQB3tfCNnkQMU" />
