@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listview"
+    android:paddingBottom="@dimen/list_view_vertical_margin"
+    android:paddingLeft="@dimen/list_view_horizontal_margin"
+    android:paddingRight="@dimen/list_view_horizontal_margin"
+    android:paddingTop="@dimen/list_view_vertical_margin" >
+
+    <!-- Thumbnail and Photo -->
+
+    <LinearLayout
+        android:id="@+id/listViewRowCategThumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="4sp"
+        android:background="@drawable/picture_border_blue"
+        android:padding="2sp" >
+
+        <TextView
+            android:id="@+id/listViewRowCategLetter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="A"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <!-- Data -->
+
+    <TextView
+        android:id="@+id/listViewRowCategDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/listViewRowCategThumbnail"
+        android:layout_toLeftOf="@+id/listViewRowCategNumPlaces"
+        android:layout_toRightOf="@+id/listViewRowCategThumbnail"
+        android:text="Design"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/listViewRowCategNumPlaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listViewRowCategThumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/listViewRowCategThumbnail"
+        android:gravity="right|center_vertical"
+        android:text="Total"
+        android:textColor="@android:color/secondary_text_light_nodisable"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/listViewRowCategDescr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listViewRowCategNumPlaces"
+        android:layout_alignLeft="@+id/listViewRowCategDesign"
+        android:layout_below="@+id/listViewRowCategDesign"
+        android:layout_toLeftOf="@+id/listViewRowCategNumPlaces"
+        android:text="Descr"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

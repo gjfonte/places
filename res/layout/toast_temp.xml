@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toastTempRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#666"
+    android:orientation="horizontal"
+    android:padding="4dp" >
+
+    <TextView
+        android:id="@+id/toastTempTxtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4sp"
+        android:text="temp"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/toastTempTxtMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4sp"
+        android:text="min"
+        android:textColor="#2c9cbd"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/toastTempTxtSep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4sp"
+        android:text="-"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/toastTempTxtMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4sp"
+        android:text="max"
+        android:textColor="@color/red"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp" >
+
+        <ImageView
+            android:id="@+id/loginImg"
+            android:layout_width="128dip"
+            android:layout_height="128dip"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/point_blue_big" />
+
+        <EditText
+            android:id="@+id/loginTxtUsername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/loginTxtPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginTxtUsername"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/loginEnter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginTxtPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/enter"
+            android:onClick="enterClicked" />
+
+        <TextView
+            android:id="@+id/loginLblNewUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginEnter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/new_user"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+</ScrollView>

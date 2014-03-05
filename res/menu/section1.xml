@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menuSection1Add"
+        android:icon="@drawable/ic_menu_new"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_find"/>
+    
+    <item
+        android:id="@+id/menuSection1Del"
+        android:icon="@drawable/ic_menu_delete"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_delete"/>
+    
+</menu>

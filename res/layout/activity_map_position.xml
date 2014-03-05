@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapPosition" >
+
+    <RelativeLayout
+        android:id="@+id/mapPositionInfoBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/box_light_blue"
+        android:padding="4sp" >
+
+        <Spinner
+            android:id="@+id/mapPositionSpLayers"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/mapPositionLblLat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mapPositionSpLayers"
+            android:layout_toRightOf="@+id/mapPositionSpLayers"
+            android:gravity="center"
+            android:text="@string/lat"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/mapPositionLblLon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mapPositionLblLat"
+            android:layout_toRightOf="@+id/mapPositionSpLayers"
+            android:gravity="center"
+            android:text="@string/lon"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/mapPositionMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mapPositionInfoBar"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+</RelativeLayout>

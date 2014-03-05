@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowMap" >
+
+    <RelativeLayout
+        android:id="@+id/showMapInfoBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/box_light_blue"
+        android:padding="4sp" >
+
+        <Spinner
+            android:id="@+id/showMapSpLayers"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/showMapLblTit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/showMapSpLayers"
+            android:layout_toRightOf="@+id/showMapSpLayers"
+            android:gravity="center"
+            android:text="@string/point_number"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/showMapLblPointNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showMapLblTit"
+            android:layout_toRightOf="@+id/showMapSpLayers"
+            android:gravity="center"
+            android:text="@string/point_number"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/showMapMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/showMapInfoBar"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+</RelativeLayout>

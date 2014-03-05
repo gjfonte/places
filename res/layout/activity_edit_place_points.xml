@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <EditText
+        android:id="@+id/editPlacePointTxtLat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:hint="@string/lat"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <EditText
+        android:id="@+id/editPlacePointTxtLon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:hint="@string/lon"
+        android:inputType="numberDecimal|numberSigned"
+        android:paddingTop="4sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4sp" >
+
+        <Button
+            android:id="@+id/editPlacePointBtnGps"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/get_from_gps" />
+
+        <Button
+            android:id="@+id/editPlacePointBtnMap"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/get_from_map" />
+    </LinearLayout>
+
+</LinearLayout>

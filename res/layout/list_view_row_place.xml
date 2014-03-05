@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listview"
+    android:paddingBottom="@dimen/list_view_vertical_margin"
+    android:paddingLeft="@dimen/list_view_horizontal_margin"
+    android:paddingRight="@dimen/list_view_horizontal_margin"
+    android:paddingTop="@dimen/list_view_vertical_margin" >
+
+    <!-- Thumbnail and Photo -->
+
+    <LinearLayout
+        android:id="@+id/listViewRowPlaceThumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="4sp"
+        android:background="@drawable/picture_border"
+        android:padding="2sp" >
+
+        <ImageView
+            android:id="@+id/listViewRowPlacePhoto"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="Photo"
+            android:src="@drawable/ic_picture" />
+    </LinearLayout>
+
+    <!-- Data -->
+
+    <TextView
+        android:id="@+id/listViewRowPlaceDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/listViewRowPlaceThumbnail"
+        android:layout_toRightOf="@+id/listViewRowPlaceThumbnail"
+        android:text="Design"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/listViewRowPlaceDescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listViewRowPlaceDesign"
+        android:layout_below="@+id/listViewRowPlaceDesign"
+        android:text="Descr"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listViewRowPlaceDet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listViewRowPlaceThumbnail"
+        android:layout_alignLeft="@+id/listViewRowPlaceDescr"
+        android:text="Det"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listViewRowPlaceLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/listViewRowPlaceThumbnail"
+        android:layout_toLeftOf="@+id/listViewRowPlaceLatDec"
+        android:gravity="right|center_vertical"
+        android:text="Lat"
+        android:textColor="@android:color/secondary_text_light_nodisable"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/listViewRowPlaceLatDec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/listViewRowPlaceLat"
+        android:gravity="right|center_vertical"
+        android:text="LatD"
+        android:textColor="@android:color/secondary_text_light_nodisable"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/listViewRowPlaceLon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listViewRowPlaceThumbnail"
+        android:layout_toLeftOf="@+id/listViewRowPlaceLonDec"
+        android:gravity="right|center_vertical"
+        android:text="Lon"
+        android:textColor="@android:color/secondary_text_light_nodisable"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/listViewRowPlaceLonDec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/listViewRowPlaceLon"
+        android:gravity="right|center_vertical"
+        android:text="LonD"
+        android:textColor="@android:color/secondary_text_light_nodisable"
+        android:textSize="14sp" />
+
+</RelativeLayout>

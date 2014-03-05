@@ -1,0 +1,176 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Section1" >    
+
+    <TableRow android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/dashBoardImgProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:onClick="imgProfileClicked"
+                android:src="@drawable/ic_picture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashBoardImgProfile"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="Caravela"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/dashBoardImgFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="imgFriendsClicked"
+                android:src="@drawable/ic_picture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashBoardImgFriends"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="Stª Luzia"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/dashBoardImgGroups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:onClick="imgGroupsClicked"
+                android:src="@drawable/ic_picture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashBoardImgGroups"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="Axis"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/dashBoardImgEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="imgEventsClicked"
+                android:src="@drawable/ic_picture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashBoardImgEvents"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="Flor de Sal"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/dashBoardImgNewMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:onClick="imgNewMessageClicked"
+                android:src="@drawable/ic_picture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashBoardImgNewMessage"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="Praia Norte"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/dashBoardImgNewEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="imgNewEventClicked"
+                android:src="@drawable/ic_picture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashBoardImgNewEvent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="Praia Mariana"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+    </TableRow>
+
+</TableLayout>
